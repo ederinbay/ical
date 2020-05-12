@@ -100,6 +100,7 @@ func (e *Event) GenerateEventProp() string {
 	str.WriteString("UID:" + e.UID + "\r\n")
 	str.WriteString("DTSTAMP:" + FormatDateTime(*e.DTSTAMP) + "\r\n")
 	str.WriteString("DTSTART:" + FormatDateTime(*e.DTSTART) + "\r\n")
+	str.WriteString("DTEND:" + FormatDateTime(*e.DTEND) + "\r\n")
 
 	// Write optional params
 	str.WriteString("SUMMARY:" + e.SUMMARY + "\r\n")
