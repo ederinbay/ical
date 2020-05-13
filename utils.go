@@ -10,7 +10,7 @@ import (
 // FormatDateTime function formats a time.Time object
 // in accordance to RFC 5545
 func FormatDateTime(t time.Time) string {
-	layout := "20060102T150405Z"
+	layout := "20060102T150405"
 	timestamp := t.Format(layout)
 	return timestamp
 }
