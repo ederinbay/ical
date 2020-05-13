@@ -26,7 +26,7 @@ type Calendar struct {
 // NewCalendar creates an instance of struct Calendar
 func NewCalendar() *Calendar {
 	c := new(Calendar)
-	c.PRODID = "-//loozhengyuan//ical//EN"
+	c.PRODID = "-//edrnby//ical//EN"
 	c.VERSION = "2.0"
 	return c
 }
